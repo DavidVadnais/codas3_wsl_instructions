@@ -1,4 +1,4 @@
-# Windows10 - Ubuntu - 20.04.01 - codas3 testing
+# Windows10 - Ubuntu - 20.04.01 - Testing
 
 This set of tests are for running codas on a Windows10 machine with WSL2 Ubuntu20.04.01. We are following the [Test the CODAS Python Installation](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/test_it/index.html) guide.
 
