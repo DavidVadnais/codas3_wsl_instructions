@@ -15,16 +15,32 @@ There is probably a better way but for now change the file ```~/adcpcode/program
 ```
 sed -i 's/find_executable(['pip3', 'pip'])/"\/home\/dvadnais\/.local\/bin\/pip"/g' ~/adcpcode/programs/pycurrents/setup_helper.py
 ```
+*Problem 2:*
+Modules not installing as expected
+*Solution 2:*
+```
+pip install PyQt5 qtconsole
+```
+*Problem 3:*
+figview is crashing
+```
+figview.py --type png
+WARNING: CPU random generator seem to be failing, disabling hardware random number generation
+WARNING: RDRND generated: 0xffffffff 0xffffffff 0xffffffff 0xffffffff
+qt.qpa.plugin: Could not load the Qt platform plugin "xcb" in "" even though it was found.
+This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
 
+Available platform plugins are: eglfs, linuxfb, minimal, minimalegl, offscreen, vnc, wayland-egl, wayland, wayland-xcomposite-egl, wayland-xcomposite-glx, webgl, xcb.
+
+Aborted
+```
+*Solution 3:*
+
+
+## Installation
 [Compile and install CODAS parts](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#compile-and-install-codas-components)
 
 ```
-cd ~/adcpcode/programs/codas3
-./waf configure
-./waf build
-sudo ./waf install
-cd ~
-
 cd ~/adcpcode/programs/pycurrents
 python3 ./runsetup.py --sudo
 cd ../uhdas
