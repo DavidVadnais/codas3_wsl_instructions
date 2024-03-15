@@ -29,6 +29,11 @@ cd ~/adcpcode/programs/codas3
 sudo ./waf install
 cd ~
 ```
+## Next steps
+If you additonally want the capability of pycurrents (standard) go to [INSTALL_pycurrents.md](INSTALL_pycurrents.md).
+
+If you just want the capability of CODAS you can go straight to [TESTING.md](TESTING.md).
+
 ## Problems
 ### Problem 1:
 ```
