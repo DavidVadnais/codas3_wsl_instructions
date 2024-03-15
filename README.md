@@ -9,6 +9,7 @@ This repo was created because there is sometimes a desire to install codas3 usin
 * See tested distros.
 * Install mercurial
 * Install python3
+* Install unzip
 
 ## Tested Linux Distributions
 ### Windows 10
