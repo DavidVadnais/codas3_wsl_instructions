@@ -4,7 +4,7 @@
 This is the CLI solutions to the problems with running figview and dataviewer.  To see more details go to the problems section.
 ```
 # Problem 1
-sed -i 's/find_executable(['pip3', 'pip'])/"\/home\/dvadnais\/.local\/bin\/pip"/g' ~/adcpcode/programs/pycurrents/setup_helper.py
+Im still working on the sed command so change the file ```~/adcpcode/programs/pycurrents/setup_helper.py``` line ```pip_cmd = find_executable(['pip3', 'pip'])``` to ```pip_cmd = "/home/$USER/.local/bin/pip"```
 
 # Problem 2
 pip install PyQt5 qtconsole
