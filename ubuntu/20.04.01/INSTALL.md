@@ -1,6 +1,32 @@
 # Windows10 - Ubuntu - 20.04.01 - codas3 install
 This set of install and debug instructions are for installing codas on a Windows10 machine with WSL2 Ubuntu20.04.01. We are following the [Setting up CODAS packages](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html) Ubuntu native install guide.
 
+## Install specific presteps
+*Problem 1:*
+```
+sudo ./waf install
+/usr/bin/env: ‘python’: No such file or directory
+```
+*Solution 1:*
+```
+sudo ln -s /usr/bin/python3 /usr/bin/python
+```
+*Problem 2:*
+```
+ python3 ./runsetup.py --sudo
+Traceback (most recent call last):
+  File "./runsetup.py", line 51, in <module>
+    from setup_helper import (find_codasbase,
+  File "/home/dvadnais/adcpcode/programs/pycurrents/setup_helper.py", line 32, in <module>
+    raise RuntimeError("Cannot find a 'pip' co-located with the running python.")
+RuntimeError: Cannot find a 'pip' co-located with the running python.
+```
+*Solution 2:*
+```
+Calculating.. 
+```
+
+
 ## Install steps
 [Download CODAS](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#download-codas-software-using-mercurial)
 ```
@@ -16,7 +42,6 @@ hg clone   https://currents.soest.hawaii.edu/hg/uhdas
 ```
 [Compile and install CODAS parts](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#compile-and-install-codas-components)
 
-See debug section Compile and install CODAS for issues with the commands below
 ```
 cd ~/adcpcode/programs/codas3
 ./waf configure
@@ -59,12 +84,4 @@ cd
 [Install the “toml” library](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#install-the-toml-library)
 ```
 sudo pip3 install toml
-```
-## Debug
-### Compile and install CODAS
-*Problem:*
-/usr/bin/env: ‘python’: No such file or directory
-
-```
-sudo ln -s /usr/bin/python3 /usr/bin/python
 ```
