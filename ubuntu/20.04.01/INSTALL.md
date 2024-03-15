@@ -15,6 +15,7 @@ hg clone   https://currents.soest.hawaii.edu/hg/onship
 hg clone   https://currents.soest.hawaii.edu/hg/uhdas
 ```
 [Compile and install CODAS parts](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#compile-and-install-codas-components)
+
 See debug section Compile and install CODAS for issues with the commands below
 ```
 cd ~/adcpcode/programs/codas3
@@ -33,6 +34,7 @@ sudo python3 setup.py install
 cd ~
 ```
 [Download documentation and processing demo directories](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#download-documentation-and-processing-demo-directories)
+
 You may need to install unzip.
 ```
 cd ~/adcpcode/programs
