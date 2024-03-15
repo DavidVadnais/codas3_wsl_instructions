@@ -35,7 +35,20 @@ Available platform plugins are: eglfs, linuxfb, minimal, minimalegl, offscreen, 
 Aborted
 ```
 *Solution 3:*
+```
+sudo apt-get update
+sudo apt-get -y install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0
+sudo apt-get install --reinstall libxcb-xinerama0
+```
+*Help 3:*
 
+You may be missing more or fewer libraries. To explore this issue look at the errors after you run the below commands.
+```
+export QT_DEBUG_PLUGINS=1
+
+cd ~/adcpcode/programs/adcp_py3demos/uhdas_data/km1001c/proc/os38nb
+figview.py --type png
+```
 
 ## Installation
 [Compile and install CODAS parts](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#compile-and-install-codas-components)
