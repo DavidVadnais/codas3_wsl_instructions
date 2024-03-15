@@ -1,18 +1,11 @@
 # Windows10 - Ubuntu - 20.04.01 - codas3 install
 This set of install and debug instructions are for installing codas on a Windows10 machine with WSL2 Ubuntu20.04.01. We are following the [Setting up CODAS packages](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html) Ubuntu native install guide.
 
-## Install specific presteps
-*Problem 1:*
-```
-sudo ./waf install
-/usr/bin/env: ‘python’: No such file or directory
-```
-*Solution 1:*
+## Windows specific solutions
+This is the CLI solutions to the problems with running CODAS.  To see more details go to the problems section.
 ```
 sudo ln -s /usr/bin/python3 /usr/bin/python
 ```
-
-
 
 ## Install steps
 [Download CODAS](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#download-codas-software-using-mercurial)
@@ -35,4 +28,14 @@ cd ~/adcpcode/programs/codas3
 ./waf build
 sudo ./waf install
 cd ~
+```
+## Problems
+### Problem 1:
+```
+sudo ./waf install
+/usr/bin/env: ‘python’: No such file or directory
+```
+### Solution 1:
+```
+sudo ln -s /usr/bin/python3 /usr/bin/python
 ```
