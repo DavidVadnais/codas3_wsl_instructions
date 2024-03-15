@@ -59,6 +59,8 @@ cd
 ```
 sudo pip3 install toml
 ```
+## Next steps
+Now go to [TESTING.md](TESTING.md).
 
 ## Problems
 ### Problem 1:
