@@ -5,6 +5,7 @@
 * Choose a distro
 * See tested distros.
 * Install mercurial
+* Install python3
 * Pull the codas3 repository https://currents.soest.hawaii.edu/hg/codas3/
 
 ## Tested Linux Distributions
