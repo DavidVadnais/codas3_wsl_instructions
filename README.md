@@ -13,7 +13,7 @@ This repo was created because there is sometimes a desire to install codas3 usin
 
 ## Tested Linux Distributions
 ### Windows 10
-* 20.04.01
+* Ubuntu - 20.04.01
 
 ### Windows 11
 * None
