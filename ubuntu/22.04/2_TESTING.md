@@ -4,13 +4,13 @@
 
 ## Test Data
 Get the test data: 
-```
+``` bash
 curl -O https://currents.soest.hawaii.edu/docs/zipped/codas_demos.zip
 unzip codas_demos.zip
 ```
 
 ## Test CODAS
-```
+``` bash
 cd codas_demos/adcp_pyproc/km1001c_uhdas/os38nb/adcpdb
 showdb aship
 ```
@@ -35,7 +35,7 @@ Type 99 to quit
 
 ## Test pycurrents
 ### figview.py
-```
+``` bash
 cd codas_demos/adcp_pyproc/km1001c_uhdas/os38nb/webpy
 figview.py --type png
 ```
@@ -43,7 +43,7 @@ This should look like [fig_view_example.PNG](example_images/fig_view_example.PNG
 
 ### dataviewer.py
 *Note: you need topo for this*
-```
+``` bash
 cd codas_demos/adcp_pyproc/km1001c_uhdas/os38nb
 dataviewer.py
 ```

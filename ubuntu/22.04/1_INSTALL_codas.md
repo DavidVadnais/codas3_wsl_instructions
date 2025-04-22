@@ -3,7 +3,7 @@ This set of install and debug instructions are for installing CODAS on a Windows
 
 ## Install steps
 These install micromamba were pulled from [here] on 2025-04-22.
-```
+``` bash
 # micromamba install
 "${SHELL}" <(curl -L micro.mamba.pm/install.sh)
 echo ${SHELL} # if you need to find your shell
@@ -16,7 +16,7 @@ micromamba env create --file codas_processing_intel.yml
 micromamba activate 
 ```
 [Download CODAS](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#download-codas-software-using-mercurial)
-```
+``` bash
 # in your working directory
 hg clone   https://currents.soest.hawaii.edu/hg/codas3
 hg clone   https://currents.soest.hawaii.edu/hg/pycurrents
@@ -24,7 +24,7 @@ hg clone   https://currents.soest.hawaii.edu/hg/onship
 hg clone   https://currents.soest.hawaii.edu/hg/uhdas
 ```
 [Compile and install CODAS parts](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#compile-and-install-codas-components)
-```
+``` bash
 cd codas3
 ./waf configure
 ./waf build
@@ -33,13 +33,13 @@ sudo ./waf install
 
 ## Pycurrents
 CODAS should now work as desired.  If you just want CODAS you can now go to [2_TESTING.md](2_TESTING.md). Otherwise, if you additionally want the capability of pycurrents (standard):
-```
+``` bash
 cd pycurrents
 pip install .
 cd -
 ```
 While some capability of pycurrents is now available, for most use cases, it is desirable to have topography.
-```
+``` bash
 cd ~/adcpcode/topog
 mkdir etopo
 cd etopo
@@ -50,7 +50,7 @@ ln -s ${FULL_PATH}topog ~/micromamba/.
 
 ## UHDAS
 CODAS and pycurrents should now work as desired.  If you just want these tools you can now go to [2_TESTING.md](2_TESTING.md). Otherwise, if you additionally want the capability of UHDAS (standard):
-```
+``` bash
 cd uhdas
 pip install .
 cd ../onship # assumes you placed all repos side by side
