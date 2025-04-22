@@ -13,13 +13,22 @@ This repo was created because there is sometimes a desire to install codas3 usin
 
 ## Tested Linux Distributions
 ### Windows 10
-* Ubuntu - 20.04.01
+* Ubuntu - 20.04
+* Ubuntu - 22.04
 
 ### Windows 11
 * None
 
 ## Test hardware
+One or more of the following machines was used to test each scenario. See test_machine.txt for details.
+Machine 1
 * CPU: AMD Ryzen 7 3800X 8-core Processor
 * Memory: 32 GB
 * GPU: AMD Radeon RX 5700 XT
 * Disk: Samsung SSD 970 EVO 1TB
+
+Machine 2
+* CPU: 12th Gen Intel(R) Core(TM) i7-12650H
+* Memory: 32 GB
+* GPU: NVIDIA GeForce RTX 4060 Laptop GPU
+* Disk: Micron_2400_MTFDKBA1T0QFM

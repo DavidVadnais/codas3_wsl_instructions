@@ -44,3 +44,5 @@ sudo ./waf install
 ```
 sudo ln -s /usr/bin/python3 /usr/bin/python
 ```
+
+*Last run: 2024-03-15 (yyyy-mm-dd)*

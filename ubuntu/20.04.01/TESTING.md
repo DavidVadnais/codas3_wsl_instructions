@@ -43,7 +43,7 @@ Look at the data with the viewer: To quit, close the control window:
 ```
 dataviewer.py
 ```
-## Additional test (INTERNAL)
+## Additional unit tests (INTERNAL)
 This runs our internal test suite.  This section is for UHDAS team members.
 ```
 sudo apt install python3-pytest
@@ -53,3 +53,5 @@ cd ~/adcpcode/programs/pycurrents
 ./runsetup.py --test_and_log
 figview.py ./test_figures
 ```
+
+*Last run: 2024-03-15 yyyy-mm-dd*
