@@ -14,10 +14,13 @@ This repo was created because there is sometimes a desire to install codas3 usin
 ## Tested Linux Distributions
 ### Windows 10
 * Ubuntu - 20.04
+    * Python version 3.10.12
 * Ubuntu - 22.04
+    * Python version 3.11.12 
 
 ### Windows 11
-* None
+* Ubuntu - 24.04
+    * Python version 3.11.12
 
 ## Test hardware
 One or more of the following machines was used to test each scenario. See test_machine.txt for details.

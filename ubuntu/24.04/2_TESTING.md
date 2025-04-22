@@ -1,6 +1,6 @@
-# Windows10 - Ubuntu - 22.04 - Testing
+# Windows11 - Ubuntu - 24.04 - Testing
 ## Prerequisites 
-* Windows10 - Ubuntu - 22.04 - codas3 install has been followed. [1_INSTALL_codas.md](1_INSTALL_codas.md)
+* Windows11 - Ubuntu - 24.04 - codas3 install has been followed. [1_INSTALL_codas.md](1_INSTALL_codas.md)
 
 ## Test Data
 Get the test data: 

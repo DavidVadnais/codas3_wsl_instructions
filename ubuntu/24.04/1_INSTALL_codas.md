@@ -1,5 +1,5 @@
-# Windows10 - Ubuntu - 22.04 - codas3 install
-This set of install and debug instructions are for installing CODAS on a Windows10 machine with WSL2 Ubuntu 22.04. We are following the [Setting up CODAS packages](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) Ubuntu conda install guide but I am swapping out conda for micromamba.
+# Windows11 - Ubuntu - 24.04 - codas3 install
+This set of install and debug instructions are for installing CODAS on a Windows11 machine with WSL2 Ubuntu 24.04. We are following the [Setting up CODAS packages](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) Ubuntu conda install guide but I am swapping out conda for micromamba.
 
 ## Install steps
 These install micromamba were pulled from [here](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) on 2025-04-22.
@@ -16,6 +16,10 @@ micromamba env create --file codas_processing_intel.yml
 micromamba activate pycodas
 ```
 [Download CODAS](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#download-codas-software-using-mercurial)
+
+> **⚠️ Warning**
+> Installing in /mnt/c can cause permission problems use ~ if possible
+
 ``` bash
 # in your working directory
 hg clone   https://currents.soest.hawaii.edu/hg/codas3
@@ -23,19 +27,35 @@ hg clone   https://currents.soest.hawaii.edu/hg/pycurrents
 hg clone   https://currents.soest.hawaii.edu/hg/onship
 hg clone   https://currents.soest.hawaii.edu/hg/uhdas
 ```
+
 [Compile and install CODAS parts](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#compile-and-install-codas-components)
 ``` bash
+sudo apt install gcc
+
+# requires system python
 cd codas3
 ./waf configure
 ./waf build
 sudo ./waf install
+
+# if you dont have system python 
+export MY_USER=$(whoami)
+sudo env PATH="${PATH}:/home/${MY_USER}/micromamba/envs/pycodas/bin" ./waf install
 ```
+
 
 ## Pycurrents
 CODAS should now work as desired.  If you just want CODAS you can now go to [2_TESTING.md](2_TESTING.md). Otherwise, if you additionally want the capability of pycurrents (standard):
 ``` bash
 cd pycurrents
+# try 
 pip install .
+
+# if it fails (see above warning)
+rm setup_helper.py
+ln -s pycurrents/setup_helper.py setup_helper.py
+micromamba install toml
+pip install . 
 cd -
 ```
 While some capability of pycurrents is now available, for most use cases, it is desirable to have topography.
