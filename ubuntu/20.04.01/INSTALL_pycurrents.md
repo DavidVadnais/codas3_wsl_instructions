@@ -9,7 +9,7 @@ Im still working on the sed command so change the file ```~/adcpcode/programs/py
 # Problem 2
 pip install PyQt5 qtconsole
 
-# problem 3
+# Problem 3
 sudo apt-get update
 sudo apt-get -y install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0
 sudo apt-get install --reinstall libxcb-xinerama0
@@ -22,7 +22,7 @@ pip install netCDF4 basemap
 ## Installation
 [Compile and install CODAS parts](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#compile-and-install-codas-components)
 
-```
+``` bash
 cd ~/adcpcode/programs/pycurrents
 python3 ./runsetup.py --sudo
 cd ../uhdas
@@ -35,7 +35,7 @@ cd ~
 [Download documentation and processing demo directories](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#download-documentation-and-processing-demo-directories)
 
 You may need to install unzip.
-```
+``` bash
 cd ~/adcpcode/programs
 curl -O https://currents.soest.hawaii.edu/docs/zipped/adcp_doc.zip
 unzip adcp_doc.zip
@@ -44,7 +44,7 @@ unzip adcp_py3demos.zip
 ```
 
 [Download and install Topography files](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#download-and-install-topography-files)
-```
+``` bash
 cd ~/adcpcode/topog
 mkdir etopo
 cd etopo
@@ -56,7 +56,7 @@ sudo ln -s  ~/adcpcode/topog .
 cd
 ```
 [Install the “toml” library](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#install-the-toml-library)
-```
+``` bash
 sudo pip3 install toml
 ```
 ## Next steps
@@ -64,7 +64,7 @@ Now go to [TESTING.md](TESTING.md).
 
 ## Problems
 ### Problem 1:
-```
+``` bash
  python3 ./runsetup.py --sudo
 Traceback (most recent call last):
   File "./runsetup.py", line 51, in <module>
@@ -76,18 +76,18 @@ RuntimeError: Cannot find a 'pip' co-located with the running python.
 ### Solution 1:
 There is probably a better way but for now change the file ```~/adcpcode/programs/pycurrents/setup_helper.py``` line ```pip_cmd = find_executable(['pip3', 'pip'])``` to ```pip_cmd = "/home/$USER/.local/bin/pip"```
 
-```
+``` bash
 sed -i 's/find_executable(['pip3', 'pip'])/"\/home\/dvadnais\/.local\/bin\/pip"/g' ~/adcpcode/programs/pycurrents/setup_helper.py
 ```
 ### Problem 2:
 Modules not installing as expected
 ### Solution 2:
-```
+``` bash
 pip install PyQt5 qtconsole
 ```
 ### Problem 3:
 figview is crashing
-```
+``` bash
 figview.py --type png
 WARNING: CPU random generator seem to be failing, disabling hardware random number generation
 WARNING: RDRND generated: 0xffffffff 0xffffffff 0xffffffff 0xffffffff
@@ -99,7 +99,7 @@ Available platform plugins are: eglfs, linuxfb, minimal, minimalegl, offscreen, 
 Aborted
 ```
 ### Solution 3:
-```
+``` bash
 sudo apt-get update
 sudo apt-get -y install libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-render-util0
 sudo apt-get install --reinstall libxcb-xinerama0
@@ -107,14 +107,14 @@ sudo apt-get install --reinstall libxcb-xinerama0
 ### Help 3:
 
 You may be missing more or fewer libraries. To explore this issue look at the errors after you run the below commands.
-```
+``` bash
 export QT_DEBUG_PLUGINS=1
 
 cd ~/adcpcode/programs/adcp_py3demos/uhdas_data/km1001c/proc/os38nb
 figview.py --type png
 ```
 ### Problem 4:
-```
+``` bash
  dataviewer.py
 WARNING: CPU random generator seem to be failing, disabling hardware random number generation
 WARNING: RDRND generated: 0xffffffff 0xffffffff 0xffffffff 0xffffffff
@@ -131,7 +131,7 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'netCDF4'
 ```
 ### Solution 4:
-```
+``` bash
 pip install netCDF4 basemap
 ```
 

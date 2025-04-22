@@ -1,6 +1,6 @@
 # Windows10 - Ubuntu - 20.04.01 - Testing
 
-This set of tests are for running codas on a Windows10 machine with WSL2 Ubuntu20.04.01. We are following the [Test the CODAS Python Installation](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/test_it/index.html) guide.
+This set of tests are for running codas on a Windows10 machine with WSL2 Ubuntu 20.04.01. We are following the [Test the CODAS Python Installation](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/test_it/index.html) guide.
 
 ## Prerequisites 
 * Windows10 - Ubuntu - 20.04.01 - codas3 install has been followed
@@ -8,7 +8,7 @@ This set of tests are for running codas on a Windows10 machine with WSL2 Ubuntu2
 * the directory ~/adcpcode/programs/adcp_py3demos/uhdas_data exists
 
 ## Tests
-```
+``` bash
 cd ~/adcpcode/programs/adcp_py3demos/uhdas_data/km1001c/proc/os38nb
 
 showdb adcpdb/a_km
@@ -34,18 +34,18 @@ Type 99 to quit
 
 ## Test figview
 Look at the figures in that directory: Use the arrow keys to select ‘previous’ or ‘next’ figure:
-```
+``` bash
 figview.py --type png
 ```
 
 ## Test dataviewer
 Look at the data with the viewer: To quit, close the control window:
-```
+``` bash
 dataviewer.py
 ```
 ## Additional unit tests (INTERNAL)
 This runs our internal test suite.  This section is for UHDAS team members.
-```
+``` bash
 sudo apt install python3-pytest
 # download the pycurrents_test_data repo into ~/adcpcode/programs/ directory
 
@@ -54,4 +54,4 @@ cd ~/adcpcode/programs/pycurrents
 figview.py ./test_figures
 ```
 
-*Last run: 2024-03-15 yyyy-mm-dd*
+*Last run: 2024-03-15 (yyyy-mm-dd)*

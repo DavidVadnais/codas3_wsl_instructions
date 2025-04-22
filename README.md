@@ -21,6 +21,7 @@ This repo was created because there is sometimes a desire to install codas3 usin
 
 ## Test hardware
 One or more of the following machines was used to test each scenario. See test_machine.txt for details.
+
 Machine 1
 * CPU: AMD Ryzen 7 3800X 8-core Processor
 * Memory: 32 GB
