@@ -22,10 +22,11 @@ micromamba activate pycodas
 
 ``` bash
 # in your working directory
-hg clone   https://currents.soest.hawaii.edu/hg/codas3
-hg clone   https://currents.soest.hawaii.edu/hg/pycurrents
-hg clone   https://currents.soest.hawaii.edu/hg/onship
-hg clone   https://currents.soest.hawaii.edu/hg/uhdas
+git clone -b stable https://currents.soest.hawaii.edu/git/uh-currents-group/shipboard-adcp/codas.git
+git clone -b stable https://currents.soest.hawaii.edu/git/uh-currents-group/shipboard-adcp/pycurrents.git
+git clone -b stable https://currents.soest.hawaii.edu/git/uh-currents-group/shipboard-adcp/onship.git
+git clone -b stable https://currents.soest.hawaii.edu/git/uh-currents-group/shipboard-adcp/uhdas.git
+
 ```
 
 [Compile and install CODAS parts](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#compile-and-install-codas-components)
