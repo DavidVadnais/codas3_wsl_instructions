@@ -7,7 +7,7 @@ This repo was created because there is sometimes a desire to install codas3 usin
 * Install WSL2
 * Choose a distro
 * See tested distros.
-* Install mercurial
+* Install git
 * Install python3
 * Install unzip
 
