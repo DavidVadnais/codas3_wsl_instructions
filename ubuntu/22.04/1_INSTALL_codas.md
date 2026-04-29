@@ -18,7 +18,7 @@ micromamba activate pycodas
 [Download CODAS](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#download-codas-software-using-mercurial)
 ``` bash
 # in your working directory
-git clone -b stable https://currents.soest.hawaii.edu/git/uh-currents-group/shipboard-adcp/codas.git
+git clone -b stable https://currents.soest.hawaii.edu/git/uh-currents-group/shipboard-adcp/codas3.git
 git clone -b stable https://currents.soest.hawaii.edu/git/uh-currents-group/shipboard-adcp/pycurrents.git
 git clone -b stable https://currents.soest.hawaii.edu/git/uh-currents-group/shipboard-adcp/onship.git
 git clone -b stable https://currents.soest.hawaii.edu/git/uh-currents-group/shipboard-adcp/uhdas.git
