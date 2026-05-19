@@ -21,17 +21,19 @@ This repo was created because there is sometimes a desire to install codas3 usin
 ### Windows 11
 * Ubuntu - 24.04
     * Python version 3.11.12
+* Ubuntu - 26.04
+    * Python version 3.13.13
 
 ## Test hardware
 One or more of the following machines was used to test each scenario. See test_machine.txt for details.
 
-Machine 1
+#### Machine 1
 * CPU: AMD Ryzen 7 3800X 8-core Processor
 * Memory: 32 GB
 * GPU: AMD Radeon RX 5700 XT
 * Disk: Samsung SSD 970 EVO 1TB
 
-Machine 2
+#### Machine 2
 * CPU: 12th Gen Intel(R) Core(TM) i7-12650H
 * Memory: 32 GB
 * GPU: NVIDIA GeForce RTX 4060 Laptop GPU
