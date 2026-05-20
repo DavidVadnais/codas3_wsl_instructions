@@ -1,14 +1,12 @@
 # codas3_wsl_instructions
-For information on [Common Ocean Data Access System (CODAS)](https://currents.soest.hawaii.edu/hg/codas3/) and University of Hawaii Data Acquisition System (UHDAS) see https://currents.soest.hawaii.edu/docs/adcp_doc/index.html 
+For information on [Common Ocean Data Access System (CODAS)](https://currents.soest.hawaii.edu/git/uh-currents-group/shipboard-adcp/codas3) and University of Hawaii Data Acquisition System (UHDAS) see https://currents.soest.hawaii.edu/docs/adcp_doc/index.html 
 
 This repo was created because there is sometimes a desire to install codas3 using Windows Subsystem Linux (WSL2).  UHDAS does not officially support this however for convenience [David Vadnais](https://currents.soest.hawaii.edu/home/people/) has tested this capability here. 
 
 ## Prerequisites
 * Install WSL2
-* Choose a distro
-* See tested distros.
+* Choose a distro (The UHDAS team uses Ubuntu)
 * Install git
-* Install python3
 * Install unzip
 
 ## Tested Linux Distributions
@@ -25,7 +23,7 @@ This repo was created because there is sometimes a desire to install codas3 usin
     * Python version 3.13.13
 
 ## Test hardware
-One or more of the following machines was used to test each scenario. See test_machine.txt for details.
+One or more of the following machines was used to test each scenario. See test_machine.txt for details on each install.
 
 #### Machine 1
 * CPU: AMD Ryzen 7 3800X 8-core Processor
