@@ -1,5 +1,5 @@
-# Windows11 - Ubuntu - 26.04 - codas3 install
-This set of install and debug instructions are for installing CODAS on a Windows11 machine with WSL2 Ubuntu 26.04. We are following the [Setting up CODAS packages](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) Ubuntu conda install guide but I am swapping out conda for micromamba.
+# Windows11 - Arch Linux - 26.04 - codas3 install
+This set of install and debug instructions are for installing CODAS on a Windows11 machine with WSL2 Arch Linux. We are following the [Setting up CODAS packages](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/anaconda_install/index.html) Arch Linux conda install guide but I am swapping out conda for micromamba.
 
 ## Install steps
 These install micromamba were pulled from [here](https://mamba.readthedocs.io/en/latest/installation/micromamba-installation.html) on 2025-04-22.
@@ -31,7 +31,7 @@ git clone -b stable https://currents.soest.hawaii.edu/git/uh-currents-group/ship
 
 [Compile and install CODAS parts](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_setup/codas_config/index.html#compile-and-install-codas-components)
 ``` bash
-sudo apt install gcc
+pacman -Sy gcc
 
 # This will cover the waf install. You can also meson install but will get warning [2026-05-19].
 cd codas3
@@ -73,4 +73,4 @@ Test your install with instructions [2_TESTING.md](2_TESTING.md).
 Learn about [processing](https://currents.soest.hawaii.edu/docs/adcp_doc/codas_doc/index.html), [operations](https://currents.soest.hawaii.edu/docs/adcp_doc/UHDAS_OPERATIONS/index.html), [data](https://currents.soest.hawaii.edu/docs/adcp_doc/ADCP_INTERPRETATION/index.html) or whatever capability you desire by reading the docs. 
 
 
-*Last run: 2026-05-19 (yyyy-mm-dd)*
+*Last run: 2026-05-20 (yyyy-mm-dd)*

@@ -1,6 +1,6 @@
-# Windows11 - Ubuntu - 26.04 - Testing
+# Windows11 - Arch Linux - 26.04 - Testing
 ## Prerequisites 
-* Windows11 - Ubuntu - 26.04 - codas3 install has been followed. [1_INSTALL_codas.md](1_INSTALL_codas.md)
+* Windows11 - Arch Linux - codas3 install has been followed. [1_INSTALL_codas.md](1_INSTALL_codas.md)
 
 ## Test Data
 Get the test data: 
@@ -51,4 +51,4 @@ dataviewer.py
 ```
 This should look like [data_viewer_example.PNG](example_images/data_viewer_example.PNG)
 
-*Last run: 2026-05-19 (yyyy-mm-dd)*
+*Last run: 2026-05-20 (yyyy-mm-dd)*
