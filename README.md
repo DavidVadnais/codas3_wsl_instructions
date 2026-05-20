@@ -21,6 +21,8 @@ This repo was created because there is sometimes a desire to install codas3 usin
     * Python version 3.11.12
 * Ubuntu - 26.04
     * Python version 3.13.13
+ * Arch Linux - [2026-05-20]
+    * Python version 3.13.13
 
 ## Test hardware
 One or more of the following machines was used to test each scenario. See test_machine.txt for details on each install.
